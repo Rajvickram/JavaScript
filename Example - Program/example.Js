@@ -1,13 +1,12 @@
-function show() {
-    var a,b,c,total,tax;
-    a = document.getElementById("pname").value;
-    b = parseInt(document.getElementById("Q").value);
-    c = parseInt(document.getElementById("pr").value);
-    total = b * c;
-    tax = total * 12/100;
+function call() {
+    var a,b,c,tot,avg;
+    a = parseInt(document.getElementById("t1").value);
+    b = parseInt(document.getElementById("t2").value);
+    c = parseInt(document.getElementById("t3").value);
 
-    document.getElementById("d1").innerHTML+=a+ "<br>";
-    document.getElementById("d2").innerHTML+=b+ "<br>";
-    document.getElementById("d3").innerHTML+=c+ "<br>";
-    document.getElementById("d4").innerHTML+=total+ "<br>";
+    tot = a + b * c;
+
+    avg = tot / 3;
+
+    document.getElementById("p1").innerHTML+= "<marquee> Answer : " + avg + "</marquee>";
 }
