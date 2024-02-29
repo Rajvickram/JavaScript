@@ -4,7 +4,7 @@ function call() {
     b = parseInt(document.getElementById("t2").value)
     c = parseInt(document.getElementById("t3").value)
     tot = a + b + c;
-    avg = tot / 3;
+    avg = tot / 3; 
 
     document.getElementById("t4").value = avg
 }
