@@ -10,6 +10,12 @@ function call() {
 }
 
 
+
+
+
+
+
+
 var a,b,c,d,tot,average
 
 a = parseInt(prompt("Enter No 1 :"))
