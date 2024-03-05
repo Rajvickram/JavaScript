@@ -3,219 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example Sums Using Bootstrap</title>
-    <link rel="stylesheet" href="/Bootstrap - Links/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Example Sums using JavaScript</title>
 </head>
 <body>
-
-    
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a href="#" class="navbar-brand">LOGO</a>
-
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#one">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="one">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link active">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Products</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Pricing</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-
-    <div class="container my-5">
-        <div class="row">
-            <div class="col">
-                <div class="card">
-                    <div class="card-header">
-                        <h3 class="card-title">Form Validate</h3>
-                    </div>
-                    <div class="card-body">
-                        <form action="" method="post">
-                            <div class="col-12">
-                                <label for="name">Full Name</label>
-                                <div class="input-group">
-                                    <span class="input-group-text"><i class="bi bi-person-circle"></i></span>
-                                    <input type="text" name="name" id="name" placeholder="Enter Your Full name" class="form-control" required>
-                                </div>
-                            </div>
-                            
-                            <div class="row">
-                                <div class="col-6">
-                                    <label for="no">Mobile no.</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text"><i class="bi bi-phone"></i></span>
-                                        <input type="number" name="no" id="no" placeholder="+91 9840246280" class="form-control" required>
-                                    </div>
-                                </div>
-    
-                                <div class="col-6">
-                                    <label for="email">Email</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-                                        <input type="email" name="email" id="email" placeholder="you@gmail.com" class="form-control" required>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-6">
-                                    <label for="pwd">Password</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text"><i class="bi bi-key"></i></span>
-                                        <input type="password" name="pwd" id="pwd" class="form-control" placeholder="Password" required>
-                                    </div>
-                                </div>
-
-                                <div class="col-6">
-                                    <label for="Cnfrmpwd">Confirm Password</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text"><i class="bi bi-key-fill"></i></span>
-                                        <input type="password" name="Cnfrmpwd" id="Cnfrmpwd" class="form-control" placeholder="Confirm Password" required>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 text-center mt-3">
-                                <div class="form-check d-flex justify-content-center">
-                                    <input type="checkbox" name="Agree" id="Agree" class="form-check-input me-2" required>
-                                    <label for="name">I Agree To <a href="#" data-bs-toggle="modal" data-bs-target="#show">Terms and Conditions</a></label>
-                                </div>
-                            </div>
-
-                            <div class="row mt-3">
-                                <div class="col-12 text-center">
-                                    <button type="reset" class="btn btn-secondary">Reset</button>
-                                    <button type="submit" class="btn btn-success">Register</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="modal fade" tabindex="-1" id="show" aria-labelledby="show" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Terms and Condition</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis nulla odit minima. Quibusdam totam iste reprehenderit. Beatae cumque ratione aliquam.</p>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-primary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
     
 
+    <input type="text" id="t1" placeholder="Convert Cm to Le">
+    <br>
+    <button type="button" onclick="set()">Change...</button>
+    <br>
+    <p id="t2"></p> 
 
-    <div class="container">
-        <div class="card">
-            <div class="card-body">
-                
-                <nav>
-                    <div class="nav nav-justified">
-                        <a href="#nav-webdesign" id="webdesign" data-bs-toggle="tab" role="tab" class="nav-link">Web Design</a>
-                        <a href="#nav-webdevelopment" data-bs-toggle="tab" role="tab" class="nav-link">Web Development</a>
-                        <a href="#nav-Back" role="tab" data-bs-toggle="tab" class="nav-link">Back End</a>
-                    </div>
-                </nav>
 
-                <div class="tab-content">
-                    <div class="tab-pane show" id="nav-webdesign">
-                        <div class="m-3">
-                            <h4>Web Design</h4>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                            </ul>
-                        </div>
-                    </div>
+    <hr style="margin-top: 10rem;">
 
-                    <div class="tab-pane" id="nav-webdevelopment">
-                        <div class="m-3">
-                            <h4>Web Development</h4>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>BootStrap</li>
-                                <li>React</li>
-                            </ul>
-                        </div>
-                    </div>
+    <input type="text" id="field" placeholder="Checking Random No">
+    <br>
+    <button type="button" onclick="change()">RandomNo</button>
+    
+    <br style="margin-top: 5rem;">
 
-                    <div class="tab-pane" id="nav-Back">
-                        <div class="m-3">
-                            <h4>Back End</h4>
-                            <ul>
-                                <li>Java</li>
-                                <li>SQL</li>
-                                <li>Node Js</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container my-5">
-        <div class="row">
-            <div class="col">
-                <div class="progress" style="height: 50px;">
-                    <div id="progress-field" class="progress-bar bg-success w-50 progress-bar-striped progress-bar-animated" aria-valuenow="50" aria-valuemax="100">
-                        Uploading data..(50%)
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <p id="ans"></p>
 
 
 
 
 
 
-    <script>
-        let progr = document.getElementById("progress-field")
-
-        setInterval(function() {
-            progr.classList.toggle("progress-bar-animated")
-        }, 3000)
-    </script>
 
 
 
 
 
 
-    <script src="/Bootstrap - Links/js/bootstrap.min.js"></script>
+
+
+
+
+
+    <script src="demo.js"></script>
 </body>
 </html>
