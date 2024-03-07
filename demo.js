@@ -1,24 +1,10 @@
-function set() {
-    let cm = Number(document.getElementById("t1").value)
+function call() {
+    var a,b,c,tot,avg
+    a = document.getElementById("t1").value
+    b = document.getElementById("t2").value
+    c = document.getElementById("t3").value
+    tot = a * b / c
+    avg = tot *3/100
 
-    let inch = cm / 2.54
-
-    let res = document.getElementById("t2")
-
-    res.innerHTML = inch.toFixed(2) + " " + "Inches"
-}
-
-
-function change() {
-    let no = document.getElementById("field").value
-
-    let form = Math.floor(Math.random() * no.length)
-    
-    let rest = no[form]
-
-    let tel = document.getElementById("ans")
-
-    tel.innerHTML = rest + " " + "Numbers"
-
-    console.log("Random is : " + rest)
+    document.getElementById("t4").value = avg.toFixed(2) + " " + "Values"
 }
