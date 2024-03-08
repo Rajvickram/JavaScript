@@ -1,21 +1,24 @@
-function call() {
-    var a,b,c,tot,avg
-    a = document.getElementById("t1").value
-    b = document.getElementById("t2").value
-    c = document.getElementById("t3").value
-    tot = a * b / c
-    avg = tot *3/100
+function Call() {
+    var a,b,c,tot
+    a = parseInt(document.getElementById("t1").value)
+    b = parseInt(document.getElementById("t2").value)
+    c = parseInt(document.getElementById("t3").value)
 
-    document.getElementById("t4").value = avg.toFixed(2) + " " + "Values"
+    tot = a * b + c
+    
+
+    document.getElementById("t4").value = tot + " " + "Values"
 }
 
-var a,b,c,total,average
+var a,b,c,total,avg
 a = parseInt(prompt("Enter No 1 :"))
 b = parseInt(prompt("Enter No 2 :"))
 c = parseInt(prompt("Enter No 3 :"))
-total = a * b / c
-average = total * 12/100
 
-alert("Answer : " + average)
+total = a + b - c
 
-console.log("Answer : " + average)
+avg = total / 3 * 100
+
+alert("Answer :" + avg)
+
+console.log("Answer :" + avg)
