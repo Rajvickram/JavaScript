@@ -1,16 +1,8 @@
-let str1 = "Strive not to be a string"
+let str1 = "Strive not be a Success"
 let str2 = "but rather to be a value"
 
-// Two Ways Add the String Character
-
-/*1 - Method */
-
-console.log(str1+str2)
-
-/*2 - Method */
-
-console.log(str1.concat(str2))
- 
-
+str1.trim()
+str1.trimStart()
+str1.trimEnd()
 
 

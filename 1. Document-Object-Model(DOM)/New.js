@@ -1,9 +1,11 @@
 function check() {
-    let cm = Number(document.getElementById("input").value)
+    let name = document.getElementById("input").value
 
-    let inch = cm / 2.54
+    let formula = Math.floor(Math.random() * name.length)
 
-    let result = document.getElementById("res")  
+    let result = name[formula]
 
-    result.innerHTML = inch.toFixed(2) + " " + "Inches"
+    let show = document.getElementById("res")
+
+    show.innerHTML = result
 }
