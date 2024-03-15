@@ -46,3 +46,14 @@ console.log(res)
 let msg = `Happy! 
 birthday`
 console.log(msg)
+
+
+//  Task Given By Logic First Tamil Youtube Channel :
+
+let itemcount = 5
+let total = 95
+
+let message = `You have ${itemcount} items in Your cart.
+You have just having to save $${total} to be saved`
+
+console.log(message)

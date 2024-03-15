@@ -1,0 +1,53 @@
+body {
+    background-color: antiquewhite;
+}
+
+.container {
+    width: 25rem;
+    height: 30rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    text-align: center;
+    margin: 250px auto;
+    background-color: black;
+    color: #fff;
+}
+
+.container:hover {
+    background: linear-gradient(to right,blue,green,yellow,red);
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h2:hover{
+    color: aqua;
+}
+
+textarea {
+    font-size: 1.2rem;
+    color: coral;
+}
+
+button {
+    width: 10rem;
+    height: 2rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    background-color: burlywood;
+    color: #fff;
+}
+
+button:hover {
+    background-color: cornflowerblue;
+}
+
+label {
+    font-size: 2rem;
+}
+
+input {
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+}
