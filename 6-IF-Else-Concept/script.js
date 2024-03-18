@@ -1,65 +1,52 @@
-// Same Syntax of Java :
+//  IF Else Condition :
 
 let password = true
 
 if (password) {
-    console.log("You are Logged in")
+    console.log("You are valid to enter a Password")
 }
 else {
-    console.log("Incorrect")
+    console.log("Incorrect Passowrd")
 }
-console.log("Bye")
 
 
 
-//  JavaScript Syntax :
-// This syntax will have any Curly Brackets :
+//  age Checking Tasks :
 
 
-if(password)
-console.log("You are Logged in")
-else
-console.log("Incorrect")
+let age = 20
 
-
-// Comparison Operator : == === != !== > < >= <= ?:
-//  Logical Operators   && || !
-
-
-let age = 65
-let gender = 'female'
-
-if (age>60 && gender=='male') {
-    console.log("You are Avail for the discount")
+if (age > 19) {
+    console.log("You are valid to enter a Vote")
 }
 else {
-    console.log("Invalid")
+    console.log("You are not valid to enter a Vote")
 }
 
 
 
-//  Max of two Number :
+// Max Two Number Printing in the Variable :
 
-let a = 20
-let b = 30
-let Max
+let a = 20;
+var b = 30;
+var max 
 
-if (a>b) {
-    Max = a
+if (a > b) {
+    max = a
 }
 else {
-    Max = b
+    max = b
 }
-console.log(Max)
+
+console.log(`Value ${max}`)
 
 
-
-// Example Problem FD Calculator :
-//  FD Rates :
-//  <3 Months - 5.8%
-//  3-6 Months - 6.5%
-//  7-9 Months - 6.8%
-//  >=10 Months - 7%
+//  FD Rate Calculator :
+//  FD Rates
+//  <3 months - 5.8%
+//  3-6 months - 6.5%
+//  7-9 months - 6.8%
+//  >=10 months - 7%
 
 function fdrate() {
     let months = Number(document.getElementById("input").value)
@@ -69,15 +56,15 @@ function fdrate() {
     if (months < 3) {
         rate = 5.8
     }
-    else if (months>=3 && months<=6) {
+    else if (months >=3 && months <=6) {
         rate = 6.5
     }
-    else if (months>=7 && months<=9) {
+    else if (months >=7 && months <=9) {
         rate = 6.8
     }
     else {
         rate = 7
     }
 
-    document.getElementById("result").value = `Your Interest rate ${rate} %`
+    document.getElementById("result").value = `Your Interest rate is ${rate} %`
 }
