@@ -56,15 +56,20 @@ function fdrate() {
     if (months < 3) {
         rate = 5.8
     }
-    else if (months >=3 && months <=6) {
+
+    else if (months >= 3 && months <= 6) {
         rate = 6.5
     }
-    else if (months >=7 && months <=9) {
+
+    else if (months >=7 && months <= 9) {
         rate = 6.8
     }
-    else {
+
+    else if (months >= 10) {
         rate = 7
     }
 
-    document.getElementById("result").value = `Your Interest rate is ${rate} %`
+    document.getElementById("result").value = `${rate} % values`
+
+
 }

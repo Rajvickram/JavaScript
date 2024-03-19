@@ -22,3 +22,5 @@ console.log(result_2)
 
 let result_3 = str2.replace("but", "Rajvickram")
 console.log(result_3)
+
+
