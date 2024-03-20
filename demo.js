@@ -62,3 +62,19 @@ function fdrate() {
         document.querySelector(".result_3").value = `${rate} %`
     
 }
+
+
+
+var a,b,c,total,average
+
+a = parseInt(prompt("Enter No 1 :"))
+b = parseInt(prompt("Enter No 2 : "))
+c = parseInt(prompt("Enter No 3 : "))
+
+total = a + b + c
+
+average = tot / 3
+
+alert("Answer : " + average)
+
+console.log("Answer :" + average)
