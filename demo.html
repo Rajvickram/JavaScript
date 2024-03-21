@@ -3,58 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Example sum using JavaScript</title>
+  <title>Example sum in JavaScript</title>
 </head>
 <body>
   
 
-  Mark 1 : <input type="text" id="t1">
+  Mark 1 : <input type="text" class="t1">
   <br>
-  Mark 2 : <input type="text" id="t2">
+  Mark 2 : <input type="text" class="t2">
   <br>
   Mark 3 : <input type="text" class="t3">
   <br>
   <button type="button" onclick="call()">Click</button>
   <br>
-  Answer : <input type="text" class="result">
-  
+  Answer : <input type="text" id="result_1">
+
   <hr style="margin-top: 10rem;">
 
   <h2>Centimeter to Inches</h2>
 
-  <input type="text" class="inpt-field-1" placeholder="Enter your value...">
+  <input type="text" class="input-field" placeholder="Enter your value">
+  <br>
+  <button type="button" onclick="show()">Click</button>
+  <br>
+  <input type="text" id="result_2" placeholder="Answer will be here.....">
+
+
+  <hr style="margin-top: 10rem;">
+
+
+  <h2>Random Letters</h2>
+
+  <input type="text" class="input-field-1" placeholder="Enter your">
   <br>
   <button type="button" onclick="press()">Click</button>
   <br>
-  <input type="text" class="result_1" placeholder="Answer will be here........."> 
+  <input type="text" id="result_3" placeholder="Answer be here.....">
 
-
-  <hr style="margin-top: 10rem;">
-
-
-  <h2>Random Letter</h2>
-
-  <input type="text" class="input-field-2" placeholder="Enter ur name....">
-  <br>
-  <button type="button" onclick="show()">click</button>
-  <br>
-  <input type="text" class="result_2" placeholder="Ans will be here.......">
-
-
-
-
-
-  <hr style="margin-top: 10rem;">
 
   <h2>FD Rate Calculator</h2>
 
-  <input type="text" class="input-field-3" placeholder="Enter Your Month here.....">
+  <input type="text" class="input-field-2" placeholder="Enter Your Months">
   <br>
   <button type="button" onclick="fdrate()">Click</button>
   <br>
-  <input type="text" class="result_3" placeholder="Ans....">
+  <input type="text" id="result_4" placeholder="Answer be here....">
 
 
+
+  <h2>Counter Program</h2>
+
+  <label for="number" style="font-size: 5rem; display: flex; margin-left: 5rem;" id="countlabel">0</label>
+  <br>
+  <button type="button" id="decreaseBtn">Decrease</button>
+  <button type="button" id="resetBtn">Reset</button>
+  <button type="button" id="increaseBtn">Increase</button>
 
 
 
