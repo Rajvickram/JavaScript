@@ -76,11 +76,12 @@ item = {
     price : 65000,
     Quantity : 1,
     buy : function() {
-        console.log('Your item can added in cart')
+        console.log('Your item can added in cart-Item Function')
     }
 }
 
 item.buy()
+console.log(item)
 
 
 //  2ND Methods Without using Function Name :
@@ -106,3 +107,21 @@ let cart = {
 }
 
 console.log(cart)
+
+
+let cartItem = {
+    Note : 1,
+    Powder : 1,
+    Shoes : 2,
+    Signup : {
+        User_Name : 'Raj vickram',
+        Email : 'vikramsachin400@gmail.com',
+        Password : 'Vikram200@'
+    },
+    disp() {
+        console.log('all values are presented in this CartItem')
+    }
+}
+
+console.log(cartItem)
+cartItem.disp()
