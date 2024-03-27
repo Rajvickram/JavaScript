@@ -1,43 +1,49 @@
-//  Switch Example program while without using Button => OnClick() method 
+let btn  = document.querySelector('button')
 
-let btn = document.querySelector('button')
+let answer = document.createElement('div')
+answer.id = 'result'
+document.querySelector('.container').appendChild(answer)
 
-let result = btn.querySelector
-
-btn.addEventListener('click',display) 
+btn.addEventListener('click',display)
 
 function display() {
-    let inp = document.getElementById('input-range')
+    let inp = document.getElementById("input-range")
 
     let city = inp.options[inp.selectedIndex].value
 
     switch (city) {
         case 'Chidambaram' :
-            pop = 120
-            Lira = 10.20
+            Pop = 123456
+            Lira = 85.1
             La = 'Tamil'
             break
 
         case 'Chennai' :
-            pop = 250
-            Lira = 17.20
+            Pop = 987456
+            Lira = 95.1
             La = 'English'
             break
 
         case 'Bangalore' :
-            pop = 745
-            Lira = 41.20
+            Pop = 74563
+            Lira = 86.1
             La = 'Kannada'
             break
 
-        case 'Delhi' :
-            pop = 785
-            Lira = 85.10
+        case 'Mumbai' :
+            Pop = 896532
+            Lira = 87.1
             La = 'Hindi'
+            break
+
+        case 'Delhi' :
+            Pop = 89653
+            Lira = 88.1
+            La = 'Marathi'
             break
     }
 
-    let text = `The Indian City ${city} has Population is ${pop} and rate ${Lira} is ${La}`
+    let text = `The Indian City ${city} has Population Level is ${Pop} they have Rate is ${Lira}  and Language is ${La}`
 
-    document.getElementById('result').innerHTML = text
+    document.getElementById("result").innerHTML = text
 }
