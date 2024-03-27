@@ -1,53 +1,43 @@
+//  Switch Example program while without using Button => OnClick() method 
+
 let btn = document.querySelector('button')
 
-let resultdiv = document.createElement('div')
-resultdiv.id = 'result'
-document.querySelector(".container").appendChild(resultdiv)
+let result = btn.querySelector
 
-
-
-btn.addEventListener('click', display)
+btn.addEventListener('click',display) 
 
 function display() {
-    let inp = document.getElementById("input-range")
+    let inp = document.getElementById('input-range')
 
     let city = inp.options[inp.selectedIndex].value
 
-    let Population = 0, LiteracyRate = 0, Language = ''
-
     switch (city) {
         case 'Chidambaram' :
-            Population = 985623
-            LiteracyRate = 85.10
-            Language = 'Tamil'
+            pop = 120
+            Lira = 10.20
+            La = 'Tamil'
             break
 
         case 'Chennai' :
-            Population = 78546
-            LiteracyRate = 95.10
-            Language = 'English' 
+            pop = 250
+            Lira = 17.20
+            La = 'English'
             break
 
         case 'Bangalore' :
-            Population = 215463 
-            LiteracyRate = 95
-            Language = 'Kannada'
-            break
-
-        case 'Mumbai' :
-            Population = 874523
-            LiteracyRate = 96.10
-            Language = 'Hindi'
+            pop = 745
+            Lira = 41.20
+            La = 'Kannada'
             break
 
         case 'Delhi' :
-            Population = 1236547 
-            LiteracyRate = 97.10
-            Language = 'Marathi'
+            pop = 785
+            Lira = 85.10
+            La = 'Hindi'
             break
     }
 
-    let text = `The Indian City is ${city} and the population is ${Population} the have Rate ${LiteracyRate} and the spoken lang is ${Language}`
+    let text = `The Indian City ${city} has Population is ${pop} and rate ${Lira} is ${La}`
 
     document.getElementById('result').innerHTML = text
 }
