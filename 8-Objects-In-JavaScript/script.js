@@ -125,3 +125,24 @@ let cartItem = {
 
 console.log(cartItem)
 cartItem.disp()
+
+//  Pratice Program :
+
+let shop = {
+    name : 'raj vickram',
+    email : 'vikramsachin400@gmail.com',
+    Password : 'Vikram200@',
+    work : {
+        Table : 1,
+        Desktop_Setup : 10,
+        Modom : 5
+    },
+    call() {
+        console.log('All Values are can be Cart in the Same Displayed in this Item')
+    }
+}
+
+console.log(shop)
+console.log(shop.work)
+console.log(shop.work.Modom)
+console.log(shop.call())
