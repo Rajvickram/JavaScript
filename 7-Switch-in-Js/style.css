@@ -44,7 +44,9 @@ button {
 }
 
 #result {
+    width: 20rem;
+    margin-left: 8rem;
     font-size: 1.2rem;
-    color: cadetblue;
+    color: chartreuse;
     margin-top: 1.5rem;
 }

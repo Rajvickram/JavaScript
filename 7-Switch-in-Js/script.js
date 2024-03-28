@@ -1,49 +1,49 @@
-let btn  = document.querySelector('button')
+let btn = document.querySelector('button')
 
 let answer = document.createElement('div')
 answer.id = 'result'
 document.querySelector('.container').appendChild(answer)
 
-btn.addEventListener('click',display)
+btn.addEventListener('click',disp)
 
-function display() {
-    let inp = document.getElementById("input-range")
+function disp() {
+    let inp = document.getElementById('input-range')
 
     let city = inp.options[inp.selectedIndex].value
 
-    switch (city) {
+    switch(city) {
         case 'Chidambaram' :
-            Pop = 123456
-            Lira = 85.1
+            Pop = 12345
+            Li = 90.10
             La = 'Tamil'
             break
 
         case 'Chennai' :
-            Pop = 987456
-            Lira = 95.1
-            La = 'English'
+            Pop = 123456
+            Li = 91.12
+            la = 'English'
             break
-
+        
         case 'Bangalore' :
-            Pop = 74563
-            Lira = 86.1
+            Pop = 1234567
+            Li = 92.12
             La = 'Kannada'
             break
 
         case 'Mumbai' :
-            Pop = 896532
-            Lira = 87.1
+            Pop = 12345678
+            Li = 93.12
             La = 'Hindi'
             break
 
         case 'Delhi' :
-            Pop = 89653
-            Lira = 88.1
+            Pop = 123456789
+            Li = 94.12
             La = 'Marathi'
             break
     }
 
-    let text = `The Indian City ${city} has Population Level is ${Pop} they have Rate is ${Lira}  and Language is ${La}`
+    let text = `The Indian City have a ${city} and they are having more Population ${Pop} they have been a Rate is ${Li} the have been spoken Language is ${La}`
 
-    document.getElementById("result").innerHTML = text
+    document.getElementById('result').innerHTML = text
 }
