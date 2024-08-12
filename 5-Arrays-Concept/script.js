@@ -1,3 +1,6 @@
+Splice Method :- Delete, insert and Replace; 
+
+
 let cities = ["chidambaram", "cuddalore", "Chennai"]
 console.log(cities)
 
